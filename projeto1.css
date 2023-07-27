@@ -1,0 +1,118 @@
+body{
+    background-color: #ccc;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Header */
+
+.imagem{                    /*banner*/
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: right center;
+    padding-top: 1px;  /*macete para colar o banner no topo da pag*/
+}
+
+.titulo-principal{          /*div para o h1 e p do banner*/
+    margin: 100px auto 0 auto;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.titulo-principal h1{       /*h1 da div do banner*/
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black; /*eixo x eixo y esfumaçamento cor*/
+    text-transform: uppercase;        /*transforma fonte em maiúsculo*/
+    margin-bottom: 0;   /*o <p> já tem margin aplicado*/
+}
+
+.titulo-principal p{       /*p da div do banner*/
+    background-color: rgba(0, 0, 0, 0.7); /*com transparência*/
+    font-size: 12px;
+    display: inline-block;
+    padding: 12px;
+    border-bottom: 2px white solid;    
+}
+
+.imagem nav ul{            /*menu suspenso*/
+    margin: 20px 50px 0 0;
+    text-align: right;   /*ajustado a direita pq o li está config como inline-block*/
+}
+
+.imagem nav li{   /*botão do menu suspenso*/
+    list-style-type: none;
+    display: inline-block; /*necessário pq o elemento <li> é de linha*/
+    border: 1px solid white;
+    margin-left: 12px;   /*espaço entre botões*/
+    
+}
+
+.imagem nav a{  /*link do botão do menu suspenso*/
+    background-color: rgba(0, 0, 0, .3); /*com transparência*/
+    padding: 16px;
+    display: block; /*necessário pq o elemento <a> é de linha*/
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;   /*transforma fonte em maiúsculo*/
+    font-size: 12px;
+    letter-spacing: 2px;   /*espaçamento entre letras*/
+}
+
+.imagem nav a:hover{    /*comportamento quando passar mouse sobre o botão*/
+    background-color: rgba(0,0,0,.5);
+
+}
+
+/* Main */
+
+main{    /*limitar área de conteúdo da pag*/
+    width: 80%;
+    min-width: 600px;   /*largura minima do conteúdo*/
+    max-width: 860px;   /*largura maxima do conteúdo*/
+    margin: auto;
+}
+
+/*section{       
+    margin-top: 32px;    /*2° modo criar espaço entre o banner e o article*/
+
+
+article {    /*caixas de conteúdo*/
+    background-color: white;
+    padding: 16px;
+    margin-top: 32px;    /*criar espaço entre o banner e o article/valores de margin se sobrepõem e não somam*/
+    margin-bottom: 32px;    /*criar espaço entre os articles*/
+}
+
+article h2{    /*subtitulo do conteudo*/
+    border-bottom-style: 2px solid #ccc;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 0; /*para a caixa do h2 subir até o padding do article*/
+}
+
+article p{
+    font-size: 12px;
+    text-align: justify;
+}
+
+a.saiba-mais{       /*botão link saiba mais*/
+    border-radius: 4px;     /*borda arredondada*/
+    display: inline-block;
+    padding: 12px;
+    background-color: #cdc7c3;
+    font-size: 12px;
+}
+
+/* Rodapé */
+
+footer{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+}
